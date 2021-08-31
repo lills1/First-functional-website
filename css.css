@@ -26,7 +26,7 @@
 
 header {
     width: 100%;
-    background-color: var(--secondary);
+    background: linear-gradient(90deg, #722620, #f2bc94);
     position:relative;
     display:flex;
     height:70px;
@@ -40,15 +40,18 @@ header {
     text-align: left;
     margin-left: 1rem;
     margin-top:0.5rem;
+    font-weight:100;
   }
-
+ 
   /* aligns links to right, flexbox and colour */
   
   ul {
     text-align: right;
-    color: var(--main);
+    color: var(--secondary);
+    font-weight: 100;
     display:flex;
     margin-top:0.9rem;
+    
 }
 
   /* defins links font size, puts it to left*/
@@ -97,29 +100,36 @@ li a {
   }
   */
 
-  img{
+  .header1{
     width:100%;
-    height:200px;
+    height: 200px;
     opacity:0.5;
+    background-color: var(--main); 
 }
 
 #text1{
-  margin-top: 0rem;
-  text-align:center;
-  display: flex-end;
+  text-align:left;
+  margin-left:100px;
 
+}
+h2{
+  font-weight: 100;
+  margin-right:3rem;
+  font-style: italic;
+  color:var(--main);
 }
 .content-inline{
   display:flex;
 }
 
-figcaption{
-    position:relative;
-     margin-top:-8rem; 
+#figcaption{
+    position: relative;
+    margin-top:-8rem; 
     text-align: center;
     color: var(--secondary);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300px;
     font-size: x-large;
-    font-family:monospace;
   }
 body {
     background-color:white;
@@ -129,16 +139,11 @@ body {
 
 
 .left-text {
-  position:relative;
   color:var(--main);
-  margin-top: 7rem;
+  margin-top: 9rem;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-left:1rem;
-  border-right: 3px;
-  border-color: var(--main);
-  height: 100px;
-  width:15%;
-}
+  margin-left:50px;
+} 
 
 input[type=text], select, textarea {
   width: 50%;
@@ -152,9 +157,9 @@ input[type=text], select, textarea {
 
 /* Style the submit button */
 input[type=submit] {
-  background-color:var(--secondary);
+  background-color:var(--try);
   color: var(--main);
-  padding: 12px 20px;
+  padding: 10px 17px;
   border:none;
   border-radius: 4px;
   cursor: pointer;
@@ -163,19 +168,31 @@ input[type=submit] {
 /* Hover effect*/
 input[type=submit]:hover {
   background-color: var(--main);
-  color:var(--secondary);
+  color:var(--try);
   border: solid black;
 }
 
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  background-color: var(--main);
+  background: linear-gradient(90deg, #722620, #f2bc94);
   padding: 10px;
-  border:solid black;
   text-align:center;
-  width:50%;
+  width:100%;
+  margin-left:10px;
+  opacity:0.5;
 }
+.test{
+  font-size: x-large;
+}
+
+.vertical{
+  display:flex;
+}
+
+/*section{
+  background: linear-gradient(45deg, #722620, #f2bc94); */
+
 
 /*.about-me{
   width: 300px;
