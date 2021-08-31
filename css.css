@@ -109,6 +109,9 @@ li a {
   display: flex-end;
 
 }
+.content-inline{
+  display:flex;
+}
 
 figcaption{
     position:relative;
@@ -205,3 +208,4 @@ input[type=submit]:hover {
 /*.aboutme-row{
     display:flex;
   }
+in that case you can try moving the 'contact me' div into the 'container' div
