@@ -103,14 +103,20 @@ li a {
     opacity:0.5;
 }
 
+#text1{
+  margin-top: 0rem;
+  text-align:center;
+  display: flex-end;
+
+}
+
 figcaption{
     position:relative;
-    margin-top:-8rem;
+     margin-top:-8rem; 
     text-align: center;
     color: var(--secondary);
     font-size: x-large;
     font-family:monospace;
-  
   }
 body {
     background-color:white;
@@ -121,7 +127,6 @@ body {
 
 .left-text {
   position:relative;
-  display:flex;
   color:var(--main);
   margin-top: 7rem;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -129,25 +134,60 @@ body {
   border-right: 3px;
   border-color: var(--main);
   height: 100px;
+  width:15%;
 }
 
-.about-me{
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 9px; /* Some padding */
+  text-align: center; 
+  border: 1px solid black ;
+  border-radius: 4px; 
+  margin-top: 3px; 
+  margin-bottom: 16px; 
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color:var(--secondary);
+  color: var(--main);
+  padding: 12px 20px;
+  border:none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effect*/
+input[type=submit]:hover {
+  background-color: var(--main);
+  color:var(--secondary);
+  border: solid black;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: var(--main);
+  padding: 10px;
+  border:solid black;
+  text-align:center;
+  width:50%;
+}
+
+/*.about-me{
   width: 300px;
   border: 3px solid black;
   padding: 50px;
   margin: 20px;
   border-radius: 25px;
   background-color: var(--main);
-  display: block;
   margin-top: 0rem;
-  float:right;
-};
-
-#work{
-
- display:flex
+  display: inline-block;
 }
 
+.vertical{
+  display:flex;
+}
 
 
 
