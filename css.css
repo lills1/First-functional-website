@@ -20,6 +20,7 @@
         box-sizing: border-box;
         padding: 0;
         margin: 0;
+        padding: 0;
     }
 
     /* describes header */
@@ -162,9 +163,6 @@ body {
   cursor:pointer;
   border-radius: 15px;
 }
-#right-side-text{
-  background-color: violet;
-}
 
 
   /* creates hover effect */
@@ -180,7 +178,6 @@ body {
   float:right;
   width:35%;
   height:100%;
-  margin-top:0rem;
   display:inline;
 }
 
@@ -222,18 +219,8 @@ input[type=submit]:hover {
   width:100%;
   margin-left:10px;
   opacity:0.5;
-}
-.test{
-  font-size: x-large;
-}
 
-.vertical{
-  display:flex;
-}
-.container1{
-  width:100%;
 
-}
 
 /*section{
   background: linear-gradient(45deg, #722620, #f2bc94); */
