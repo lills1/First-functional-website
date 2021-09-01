@@ -2,14 +2,6 @@
 <html>
     <head>
     <link rel="stylesheet" href="./css.css">
-    <style>
-      .verticalLine {
-        border-right: 2px solid;
-        height: 100px;
-        margin-left:2rem;
-        justify-content: flex-end;
-        }
-      </style> 
     </head>
 
     <body>
@@ -38,16 +30,18 @@
           <main>
 
             <section class="row"> <!-- first row. display: flex. -->
-                <div class="leftSide">About me (left side)</div>
+                <div class="leftSide"><p id="About-me">About me </p> <!--(left side) --></div>
                 <div class="rightSide">My name is Lilly and I am hoping to get my foot in the door in the IT industry! </br>
-                    I am currently studying a programming course through usyd to become a full stack developer. </p> (right side)</div>
+                    I am currently studying a programming course through usyd to become a full stack developer.
+                <img src="photo.jpg" alt="photo-of-me"> </p></div>
               </section>
               <section class="row"> <!-- 2nd row. display: flex. -->
-                <div class="leftSide">Work</div>
-                <div class="rightSide">image here</div>
+                <div class="leftSide"><p id="Work">Work </p></div>
+                <div class="rightSide"><a href="https://lills1.github.io/Homework.refactor/" target="blank">
+                    <img src="website.png" alt="Here is my first work"> </a></div>
               </section>
               <section class="row"><!-- 3rd row. display: flex. -->
-                <div class="leftSide">Contact Me</div>
+                <div class="leftSide"> <p id="Contact">Contact Me </p></div>
                 <div class="rightSide">
                     <div class="container" style="display:block;">
                         <form action="action_page.php">

@@ -141,7 +141,9 @@ body {
   font-style: italic;
   font-size: x-large;
   font-weight:400;
-;
+  border-style:solid;
+  border-left:1px;
+  border-top:1px;
 }
 
 .rightSide{
@@ -152,10 +154,31 @@ body {
   margin-left:50px;
   font-weight: 100;
   margin-right:3rem;
+  width:100%;
 
 }
+
+.workimg{
+  width:100%;
+  cursor:pointer;
+  border-radius: 15px;
+}
+
+
+  /* creates hover effect */
+
+ .workimg:hover {
+        text-shadow: 2px 2px 10px white;
+      
+        filter: dropshadow(color=white, offx=2, offy=2);
+      }
+
 .row{
   display:flex;
+}
+.myphoto{
+  float:left;
+  width:100%;
 }
 
 
