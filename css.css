@@ -127,7 +127,7 @@ h2{
     font-size: x-large;
   }
 body {
-    background-color: white;
+    background-color: whitesmoke;
     border-top: black;
     border-top: 5px;
 }
@@ -155,13 +155,15 @@ body {
   font-weight: 100;
   margin-right:3rem;
   width:100%;
-
 }
 
-.work-img{
+#work-img{
   width:100%;
   cursor:pointer;
   border-radius: 15px;
+}
+#right-side-text{
+  background-color: violet;
 }
 
 
@@ -173,10 +175,13 @@ body {
         filter: dropshadow(color=white, offx=2, offy=2);
       }
 
-.row{
-  display:flex;
-}
-.my-photo{
+
+#my-photo{
+  float:right;
+  width:35%;
+  height:100%;
+  margin-top:0rem;
+  display:inline;
 }
 
 
