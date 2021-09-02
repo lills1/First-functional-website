@@ -276,6 +276,27 @@ section{
  
 
 /* Large smartphones - navbar changes color */
+
+@media screen and (max-width: 900px) {
+  #my-photo {
+    width:19rem;
+    height:12rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .sbutton{
+    margin-right:10rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #js {
+    width:19rem;
+    height:12rem;
+  }
+}
+
+
 @media screen and (max-width: 800px) {
   li {
     flex-direction:row;
@@ -286,7 +307,7 @@ section{
   header {
     height:7rem;
   }
-}
+
 
 @media screen and (max-width: 700px) {
   header {
@@ -297,8 +318,12 @@ section{
    flex-direction:column;
   }
 }
-
-
+@media screen and (max-width: 650px) {
+  #my-photo {
+    width:15rem;
+    height:10rem;
+  }
+}
     
 
 /*section{
