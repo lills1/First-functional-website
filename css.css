@@ -283,11 +283,6 @@ section{
     height:12rem;
   }
 }
-@media screen and (max-width: 900px) {
-  .sbutton{
-    margin-right:10rem;
-  }
-}
 
 @media screen and (max-width: 900px) {
   #js {
@@ -295,7 +290,6 @@ section{
     height:12rem;
   }
 }
-
 
 @media screen and (max-width: 800px) {
   li {
@@ -307,11 +301,11 @@ section{
   header {
     height:7rem;
   }
-
-
+}
 @media screen and (max-width: 700px) {
   header {
    height:9rem;
+}
 }
 @media screen and (max-width: 700px) {
   ul {
@@ -323,8 +317,9 @@ section{
     width:15rem;
     height:10rem;
   }
-}
-    
+
+} 
+
 
 /*section{
   background: linear-gradient(45deg, #722620, #f2bc94); */
