@@ -141,24 +141,25 @@ body {
   height:350px;
   width:40%;
   margin-top:2rem;
+  filter: grayscale(100%)
 }
 
 #js:hover {
   box-shadow: 2px 2px 10px white;
-  filter: dropshadow(color=white, offx=2, offy=2);
+  filter:none;
 }
 
 #work-img{
   width:100%;
+  filter: grayscale(80%)
 }
 
 
   /* creates hover effect */
 
- .work-img:hover {
-        text-shadow: 2px 2px 10px white;
-      
-        filter: dropshadow(color=white, offx=2, offy=2);
+ #work-img:hover {
+
+        filter: none;
       }
 
 
