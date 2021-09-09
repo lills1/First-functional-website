@@ -140,8 +140,11 @@ body {
   border-radius: 25px;
   height:350px;
   width:40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto ;
   margin-top:2rem;
-  filter: grayscale(100%)
+  filter: grayscale(50%);
 }
 
 #js:hover {
@@ -150,8 +153,11 @@ body {
 }
 
 #work-img{
-  width:100%;
-  filter: grayscale(80%)
+  width:80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: grayscale(80%);
 }
 
 
@@ -164,11 +170,31 @@ body {
 
 
 #my-photo{
+
   margin-left:auto;
   width:21rem;
   height:15rem;
 
 }
+
+#password{
+  
+  border-radius: 25px;
+  height:500px;
+  width:40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto ;
+  margin-top:2rem;
+  filter: grayscale(90%)
+} 
+
+#password:hover {
+  box-shadow: 2px 2px 10px white;
+  filter:none;
+  text-decoration: none;
+}
+
 
 
 input[type=text], select, textarea {
@@ -180,12 +206,19 @@ input[type=text], select, textarea {
   margin-top: 3px; 
   margin-bottom: 16px; 
 }
+
 .rightSide{
   text-align:left;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 100;
   width:100%;
   margin-top:5rem;
+}
+
+.email{
+  text-align:center;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
 }
 
 /* Style the submit button */
@@ -197,7 +230,7 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   display:block;
-  margin-left:50%;
+  margin-left:47%;
   
 }
 
@@ -212,14 +245,14 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   background: linear-gradient(90deg, #722620, #f2bc94);
-  padding: 10px;
+  padding: 8px;
   text-align:center;
   width:80%;
-  margin-left:10px;
+  margin-left:70px;
   opacity:0.5;
   position:relative;
   left:5rem;
-  top:-3rem;
+  top:-2rem;
  }
  .banner{  
    margin-top: 0.5rem;
@@ -244,6 +277,19 @@ input[type=submit]:hover {
  font-weight: 350;
  text-decoration: none;
  }
+
+ .pwbanner{
+  margin-top: 0.5rem;
+  background:linear-gradient(90deg, #722620, #f2bc94);
+  color: var(--try);
+  padding: 0.5rem;
+  text-align:center;
+  font-family: inherit;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 350;
+  text-decoration: none;
+ }
+
 footer{
   height:100px;
   padding:30px;
@@ -263,6 +309,7 @@ footer{
   display:flex;
   margin:0 5rem;
   margin-top:3rem;
+  line-height: 1.7rem;;
 }
 
 section{
