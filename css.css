@@ -27,6 +27,10 @@
         padding: 0;
     }
 
+    body {
+    background-color: whitesmoke;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
     /* describes header */
 
 header {
@@ -49,38 +53,37 @@ header {
  
   /* aligns links to right, flexbox and colour */
   
-  ul {
+  .nav-bar {
     text-align: right;
     color: var(--secondary);
     font-weight: 100;
     display:flex;
-    margin-top:0.9rem;
-    
+    margin-top:0.9rem;  
 }
 
   /* defins links font size, puts it to left*/
-  li {
+  .nav-bar li {
     display: inline;
     font-size: 1.7rem;
     margin-left: 80px;
   }
   /*hover effect over links */
 
-  li a:hover {
+  .nav-bar li a:hover {
     color:(var(--main)); 
     text-decoration:underline; 
     cursor:pointer;
 }
 
-/* changes colour of links  removes underline */
-li a {
-  color: inherit;
+/* changes colour of links removes underline */
+.nav-bar li a {
+  color: var(--secondary);
   text-decoration:none;
     }
 
   /* creates hover effect */
 
- li a:hover {
+ .nav-bar li a:hover {
         text-shadow: 2px 2px 10px white;
       
         filter: dropshadow(color=white, offx=2, offy=2);
@@ -118,7 +121,106 @@ h2{
     font-weight: 300;
     font-size: x-large;
   }
-body {
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgba(114,38,32,0.5);
+  color: black;
+  padding:70px 0;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: gray;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#about-me-heading{
+  text-align: center;
+  border-style:solid;
+  border-top:1px;
+  border-left:1px;
+  font-style: italic;
+  margin-top: -20px;
+  font-weight: 400;
+}
+
+#my-work-heading{
+  text-align: center;
+  border-style:solid;
+  border-top:1px;
+  border-left:1px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top:15px;
+}
+
+#work-img{
+  width: 100%;
+  height: auto;
+}
+.scaling-img{
+  width: 100%;
+  height: auto;
+}
+
+#img-of-me{
+  width: 100%;
+  height: auto;
+}
+
+.centered-text{
+  align-items:center;
+  text-align:center;
+  list-style-position: inside;
+}
+
+/* 
+.leftSide{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: xx-large;
+  border-style:solid;s
+  border-top:1px;
+  border-left:1px;
+  text-align:center;
+} */
+/* body {
     background-color: whitesmoke;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -159,23 +261,18 @@ body {
   margin-right: auto;
   filter: grayscale(80%);
 }
-
+ */
 
   /* creates hover effect */
 
- #work-img:hover {
+ /* #work-img:hover {
 
         filter: none;
       }
 
 
-#my-photo{
 
-  margin-left:auto;
-  width:21rem;
-  height:15rem;
-
-}
+    
 
 #password{
   
@@ -199,7 +296,7 @@ body {
 
 input[type=text], select, textarea {
   width: 50%;
-  padding: 9px; /* Some padding */
+  padding: 9px;
   text-align: center; 
   border: 1px solid black ;
   border-radius: 4px; 
@@ -219,10 +316,10 @@ input[type=text], select, textarea {
   text-align:center;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
-}
+} */
 
 /* Style the submit button */
-input[type=submit] {
+/* input[type=submit] {
   background-color:var(--try);
   color: var(--main);
   padding: 10px 17px;
@@ -232,17 +329,17 @@ input[type=submit] {
   display:block;
   margin-left:47%;
   
-}
+} */
 
 /* Hover effect*/
-input[type=submit]:hover {
+/* input[type=submit]:hover {
   background-color: var(--main);
   color:var(--try);
   border: solid black;
-}
+} */
 
 /* Add a background color and some padding around the form */
-.container {
+/* .container {
   border-radius: 5px;
   background: linear-gradient(90deg, #722620, #f2bc94);
   padding: 8px;
@@ -319,13 +416,13 @@ section{
 .work-content {
   margin:0 3rem;
   margin-top:2rem;
-}
+} */
 
  
 
 /* Large smartphones - navbar changes color */
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   #my-photo {
     width:19rem;
     height:12rem;
@@ -366,7 +463,7 @@ section{
     height:10rem;
   }
 
-} 
+}  */
 
 
 /*section{
