@@ -18,7 +18,9 @@
     html,body {
       margin:0;
       padding:0;
-      overflow-x:hidden; }
+      overflow-x:hidden; 
+        height: 100%;
+    }
   
     * {
         box-sizing: border-box;
@@ -122,76 +124,6 @@ h2{
     font-size: x-large;
   }
 
-
-
-
-
-  /* .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-    margin: 2%;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background-color: #bbb;
-    color: white;
-  }
-  
-  .flip-card-back {
-    background-color: #2980b9;
-    color: white;
-    transform: rotateY(180deg);
-  }
-  .preiposle{
-      display: flex;
-      justify-content: space-evenly;
-      padding-top: 50px;
-      position: relative;
-      text-align: center;
-      color: white;
-      flex-wrap: wrap;
-  } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
@@ -247,8 +179,9 @@ h2{
   border-left:1px;
   font-style: italic;
   margin-top: -20px;
-  font-weight: 400;
-  color:var(--secondary)
+  font-weight: 200;
+  color:var(--secondary);
+  padding-bottom:10px;
 }
 
 #my-work-heading{
@@ -257,9 +190,22 @@ h2{
   border-top:1px;
   border-left:1px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 200;
   margin-top:15px;
-  color:var(--secondary)
+  color:var(--secondary);
+  padding-bottom:10px;
+}
+
+#contact-me-heading{
+  text-align: center;
+  border-style:solid;
+  border-top:1px;
+  border-left:1px;
+  font-style: italic;
+  font-weight: 200;
+  margin-top:15px;
+  color:var(--secondary);
+  padding-bottom:10px;
 }
 
 #work-img{
@@ -281,6 +227,91 @@ h2{
   text-align:center;
   list-style-position: inside;
 }
+
+
+#password{
+
+  border-radius: 25px;
+  height:500px;
+  width:40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto ;
+  margin-top:2rem;
+  filter: grayscale(90%)
+} 
+
+#password:hover {
+  box-shadow: 2px 2px 10px white;
+  filter:none;
+  text-decoration: none;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 9px;
+  text-align: center; 
+  border: 1px solid black ;
+  border-radius: 4px; 
+  margin-top: 3px; 
+  margin-bottom: 16px; 
+}
+
+.rightSide{
+  text-align:left;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  width:100%;
+  margin-top:5rem;
+}
+
+.email{
+  text-align:center;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+} 
+
+/* Style the submit button */
+input[type=submit] {
+  background-color:var(--try);
+  color: var(--main);
+  padding: 10px 17px;
+  border:none;
+  border-radius: 4px;
+  cursor: pointer;
+  display:block;
+  margin-left:47%;
+  
+} 
+
+/* Hover effect*/
+ input[type=submit]:hover {
+  background-color: var(--main);
+  color:var(--try);
+  border: solid black;
+} 
+
+/* Add a background color and some padding around the form */
+ .container-form {
+  border-radius: 5px;
+  background: linear-gradient(90deg, #722620, #f2bc94);
+  padding: 8px;
+  text-align:center;
+  width:80%;
+  margin-left:70px;
+  opacity:0.5;
+  position:relative;
+  left:5rem;
+  top:-2rem;
+ }
+ footer{
+  height:100px;
+  padding:30px;
+  text-align:center;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+}
+
 
 /* 
 .leftSide{
