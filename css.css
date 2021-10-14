@@ -229,84 +229,6 @@ h2{
 }
 
 
-#password{
-
-  border-radius: 25px;
-  height:500px;
-  width:40%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto ;
-  margin-top:2rem;
-  filter: grayscale(90%)
-} 
-
-#password:hover {
-  box-shadow: 2px 2px 10px white;
-  filter:none;
-  text-decoration: none;
-}
-
-input[type=text], select, textarea {
-  width: 50%;
-  padding: 9px;
-  text-align: center; 
-  border: 1px solid black ;
-  border-radius: 4px; 
-  margin-top: 3px; 
-  margin-bottom: 16px; 
-}
-
-.rightSide{
-  text-align:left;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 100;
-  width:100%;
-  margin-top:5rem;
-}
-
-.email{
-  text-align:center;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 500;
-} 
-
-/* Style the submit button */
-input[type=submit] {
-  background-color:var(--try);
-  color: var(--main);
-  padding: 10px 17px;
-  border:none;
-  border-radius: 4px;
-  cursor: pointer;
-  display:block;
-  margin-left:47%;
-  
-} 
-
-/* Hover effect*/
- input[type=submit]:hover {
-  background-color: var(--main);
-  color:var(--try);
-  border: solid black;
-} 
-
-/* Add a background color and some padding around the form */
- .container-form {
-  border-radius: 5px;
-  background: linear-gradient(90deg, #722620, #f2bc94);
-  text-align:center;
-  opacity:0.5;
-  position:relative;
- }
- footer{
-  height:100px;
-  padding:30px;
-  text-align:center;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- 
-}
-
 
 
 
@@ -321,6 +243,15 @@ input[type=submit] {
     height:8rem;
   }
 } */
+
+.fa::before{
+  color: rgba(114,38,32,0.5);
+  display:inline-block;
+  padding-left:80px;
+  padding-right:80px;
+  padding-top:30px;
+  font-size:3rem;
+}
 
 @media screen and (max-width: 850px) {
   header {
