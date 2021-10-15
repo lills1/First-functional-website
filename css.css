@@ -173,7 +173,7 @@ h2{
   transform: rotateY(180deg);
 }
 
-#about-me-heading{
+.about-me-heading{
   text-align: center;
   border-style:solid;
   border-top:1px;
@@ -185,7 +185,7 @@ h2{
   padding-bottom:10px;
 }
 
-#my-work-heading{
+.my-work-heading{
   text-align: center;
   border-style:solid;
   border-top:1px;
@@ -197,7 +197,7 @@ h2{
   padding-bottom:10px;
 }
 
-#contact-me-heading{
+.contact-me-heading{
   text-align: center;
   border-style:solid;
   border-top:1px;
@@ -232,19 +232,6 @@ h2{
 
 
 
-
-@media screen and (max-width: 800px) {
-  .nav-bar li {
-    flex-direction:row;
-  }
-}
-
-/* @media screen and (max-width: 800px) {
-  header {
-    height:8rem;
-  }
-} */
-
 .fa::before{
   color: rgba(114,38,32,0.5);
   display:inline-block;
@@ -257,6 +244,12 @@ h2{
 @media screen and (max-width: 850px) {
   header {
     height:7rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    .nav-bar li {
+      flex-direction:row;
+    }
   }
 
 @media screen and (max-width: 650px) {
