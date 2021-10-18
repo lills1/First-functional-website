@@ -2,8 +2,8 @@
 This project was built as my portfolio
 
 <h1> Access and installation</h1>
-This project can be accessed through the following deployed link: https://lills1.github.io/First-functional-website/ </br>
-You can also clone the repo to your device through: git@github.com:lills1/First-functional-website.git
+This project can be accessed through the following deployed link: https://lills1.github.io/Portfolio/ </br>
+You can also clone the repo to your device through: git@github.com:lills1/Portfolio.git
 
 <h1> Technologies used</h1>
 <ul>
