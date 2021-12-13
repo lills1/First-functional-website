@@ -3,12 +3,18 @@
   ## Description
   This is my very own unique portfolio to use professionally
   ## Table of Contents 
+   - [Access and installation](#access)
   - [Technologies used](#technologies)
   - [Future improvements](#improvements)
   - [License](#license)
   - [Contributing](#contribution)
   - [Tests](#tests)
   - [Questions](#questions)
+
+  ## Access
+  Access the live website here: https://lills1.github.io/Portfolio/ </br>
+  Github repo: https://github.com/lills1/Portfolio
+  
   ## Technologies
   - HTML
   - CSS
